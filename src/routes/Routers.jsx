@@ -10,7 +10,7 @@ import TeacherList from '../components/teacher/TeacherList';
 import Aftersignup from '../pages/Aftersignup';
 import FeedbackForm from '../pages/FeedbackForm';
 import StudentSchedule from '../Dashboards/StudentDshoboard/StudentSchedule';
-import Studentgroup from '../Dashboards/StudentDshoboard/studentgroup';
+
 import StudentDasshboard from '../Dashboards/StudentDshoboard/StusentDasshboard';
 const Routers = () => {
   return (
@@ -27,7 +27,7 @@ const Routers = () => {
     <Route path="/Feedbackform" element={<FeedbackForm />} />
     
     <Route path="/StudentSchedule" element={<StudentSchedule />} />
-    <Route path="/Studentgroup" element={<Studentgroup/>} />
+    
 
     <Route path="/StudentDasshboard" element={<StudentDasshboard/>} />
    
