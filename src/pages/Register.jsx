@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import TeacherSignup from '../assets/teacherSignup.png';
+import TeacherSignup from '../assets/TeacherSignup';
 import StudentSignup from '../assets/studentsignup.png';
 
 const Register = () => {
