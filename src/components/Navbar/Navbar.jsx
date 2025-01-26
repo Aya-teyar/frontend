@@ -79,7 +79,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/contact"
+            to="/ContactUs"
             className={({ isActive }) =>
               `block text-black hover:text-customGreen font-gilroy font-semibold hover:underline ${
                 isActive ? 'text-customGreen' : ''
