@@ -74,12 +74,12 @@ const Feedback = () => {
     <div className="max-w-6xl mx-auto px-4 py-28">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold mb-4 relative inline-block">
-          Student <span className="text-teal-500">Feedback</span>
+          Student <span className="text-customGreen">Feedback</span>
           <div className="absolute bottom-0 left-0 right-0 h-2">
             <div className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-orange-300 rounded-full"></div>
           </div>
         </h2>
-        <p className="text-gray-500 mt-6">
+        <p className="text-customGreen mt-6">
           Various versions have evolved over the years, sometimes by accident,
         </p>
       </div>
