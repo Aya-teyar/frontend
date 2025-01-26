@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import TeacherSignup from '../assets/TeacherSignup';
-import StudentSignup from '../assets/studentsignup.png';
+
 
 const Register = () => {
   const navigate = useNavigate();
@@ -20,7 +19,7 @@ const Register = () => {
             onClick={() => navigate('/studentsignup')}
           >
             <img
-              src={StudentSignup}
+              src=""
               alt="Student illustration"
               className="w-64 h-64 mx-auto mb-4 object-contain"
             />
@@ -33,7 +32,7 @@ const Register = () => {
             onClick={() => navigate('/TeacherSignup')}
           >
             <img
-              src={TeacherSignup}
+              src=""
               alt="Teacher illustration"
               className="w-64 h-64 mx-auto mb-4 object-contain"
             />
