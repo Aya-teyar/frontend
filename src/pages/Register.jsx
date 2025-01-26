@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import StudentSignup from '../assets/studentsignup.png';
+
 
 const Register = () => {
   const navigate = useNavigate();
