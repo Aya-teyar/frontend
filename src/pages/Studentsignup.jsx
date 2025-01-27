@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Eye, EyeOff, Upload } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Eye, EyeOff } from 'lucide-react';
 
-const TeacherSignup = () => {
+const Studentsignup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     profileName: '',
@@ -10,6 +11,8 @@ const TeacherSignup = () => {
     diploma: null,
   });
 
+  const navigate = useNavigate(); // Use React Router's navigate hook
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -17,18 +20,18 @@ const TeacherSignup = () => {
     });
   };
 
-  const handleFileChange = (e) => {
-    if (e.target.files[0]) {
-      setFormData({
-        ...formData,
-        diploma: e.target.files[0],
-      });
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Handle form validation or API request here
+
+    // Navigate to the student dashboard
+    navigate('/studentschedule');
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-6 bg-white">
-      <div className="max-w-xl w-full p-8  shadow-lg rounded-lg">
+      <div className="max-w-xl w-full p-8 shadow-lg rounded-lg">
         <h1 className="text-3xl font-semibold text-center mb-4">Create an Account</h1>
 
         <div className="text-center mb-6 text-gray-600">
@@ -38,7 +41,7 @@ const TeacherSignup = () => {
           </a>
         </div>
 
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           {/* Profile Name Input */}
           <div>
             <input
@@ -131,4 +134,4 @@ const TeacherSignup = () => {
   );
 };
 
-export default TeacherSignup;
+export default Studentsignup;

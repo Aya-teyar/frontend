@@ -7,12 +7,13 @@ import StudentSignup from '../pages/Studentsignup'; // Adjusted capitalization f
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import TeacherList from '../components/teacher/TeacherList';
-import Aftersignup from '../pages/Aftersignup';
+import AfterLogin from '../pages/AfterLogin';
 import FeedbackForm from '../pages/FeedbackForm';
 import Portfolio from '../pages/profile/Portfolio.jsx';
 import StudentSchedule from '../Dashboards/StudentDshoboard/StudentSchedule.jsx';
 import TeacherSchedule from '../Dashboards/TeacherDashboard/TeacherSchedule.jsx';
 import ContactUs from '../pages/ContactUs.jsx';
+import Studentgroup from '../Dashboards/StudentDshoboard/Studentgroup.jsx'
 const Routers = () => {
   return (
     <Routes>
@@ -23,8 +24,9 @@ const Routers = () => {
       <Route path="/studentsignup" element={<StudentSignup />} /> {/* Fixed path */}
       <Route path="/register" element={<Register />} /> {/* Fixed path */}
       <Route path="/about" element={<About />} />
-      <Route path="/aftersignup" element={<Aftersignup />} /> 
-      <Route path="/StudentSchedule" element={< StudentSchedule/>} /> 
+      <Route path="/afterLogin" element={<AfterLogin />} /> 
+      <Route path="/StudentSchedule" element={< StudentSchedule/>} />
+      <Route path="/Studentgroup" element={< Studentgroup/>} /> 
       <Route path="/TeacherSchedule" element={< TeacherSchedule/>} /> 
       <Route path="/Portfolio" element={<Portfolio />} /> 
     <Route path="/Feedbackform" element={<FeedbackForm />} /> 

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { Eye, EyeOff, Upload } from 'lucide-react';
 
 const TeacherSignup = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     profileName: '',
@@ -26,9 +28,16 @@ const TeacherSignup = () => {
     }
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add form validation or API submission logic here, if needed
+    console.log(formData); // Log the form data for debugging
+    navigate('/teacherschedule'); // Navigate to the TeacherSchedule page
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-6 bg-white">
-      <div className="max-w-xl w-full p-8  shadow-lg rounded-lg">
+      <div className="max-w-xl w-full p-8 shadow-lg rounded-lg">
         <h1 className="text-2xl font-semibold text-center mb-2">
           Create an account
         </h1>
@@ -40,7 +49,7 @@ const TeacherSignup = () => {
           </a>
         </div>
 
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           {/* Profile Name Input */}
           <div>
             <input

@@ -109,7 +109,7 @@ const TeacherCard = ({ teacher }) => (
   </div>
 );
 
-const Aftersignup = () => {
+const AfterLogin = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [teachers, setTeachers] = useState(teachersData);
   const [activeFilters, setActiveFilters] = useState({
@@ -315,4 +315,4 @@ const Aftersignup = () => {
   );
 };
 
-export default Aftersignup;
+export default AfterLogin;

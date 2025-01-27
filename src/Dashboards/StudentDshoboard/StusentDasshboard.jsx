@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { Search, Bell, Settings, ChevronLeft, ChevronRight, ChevronDown, PlayCircle, LogOut } from 'lucide-react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Sidebar = () => (
   <div className="w-64 border-r border-gray-200 h-screen p-6">
